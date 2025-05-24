@@ -78,7 +78,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2025-05-22T07:07:37.6796854Z`, an employee on the "threat-hunt-cip" device successfully established a connection to the remote IP address `88.80.26.2` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\florinn\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a couple of other connections to sites over port `443`.
+Searched for any indication that the TOR browser was used to establish a connection via any of the known TOR ports. On 2025-05-22T07:07:37.6796854Z, an employee using the device "threat-hunt-cip" successfully established a connection to the remote IP address 88.80.26.2 on port 9001. The connection was initiated by the process tor.exe, located at C:\Users\florinn\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe. There were also a few other connections to websites over port 443.
 
 **Query used to locate events:**
 
@@ -99,15 +99,15 @@ DeviceNetworkEvents
 
 ### 1. File Download - TOR Installer
 
-- **Timestamp:** `2024-11-08T22:14:48.6065231Z`
-- **Event:** The user "employee" downloaded a file named `tor-browser-windows-x86_64-portable-14.0.1.exe` to the Downloads folder.
+- **Timestamp:** `2025-05-22T06:58:33.6551133Z`
+- **Event:** The user "florinn" downloaded a file named `tor-browser-windows-x86_64-portable-14.5.2.exe` to the Downloads folder.
 - **Action:** File download detected.
-- **File Path:** `C:\Users\employee\Downloads\tor-browser-windows-x86_64-portable-14.0.1.exe`
+- **File Path:** C:\Users\florinn\Downloads\tor-browser-windows-x86_64-portable-14.5.2.exe`
 
 ### 2. Process Execution - TOR Browser Installation
 
 - **Timestamp:** `2024-11-08T22:16:47.4484567Z`
-- **Event:** The user "employee" executed the file `tor-browser-windows-x86_64-portable-14.0.1.exe` in silent mode, initiating a background installation of the TOR Browser.
+- **Event:** The user "florinn" executed the file `tor-browser-windows-x86_64-portable-14.5.2.exe` in silent mode, initiating a background installation of the TOR Browser.
 - **Action:** Process creation detected.
 - **Command:** `tor-browser-windows-x86_64-portable-14.0.1.exe /S`
 - **File Path:** `C:\Users\employee\Downloads\tor-browser-windows-x86_64-portable-14.0.1.exe`
