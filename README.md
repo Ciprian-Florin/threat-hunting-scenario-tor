@@ -1,4 +1,4 @@
-<img width="400" src="https://github.com/user-attachments/assets/44bac428-01bb-4fe9-9d85-96cba7698bee" alt="Tor Logo with the onion and a crosshair on it"/>
+![image](https://github.com/user-attachments/assets/b0d6aff7-13fd-470e-8882-5c90c95549a6)<img width="400" src="https://github.com/user-attachments/assets/44bac428-01bb-4fe9-9d85-96cba7698bee" alt="Tor Logo with the onion and a crosshair on it"/>
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/Ciprian-Florin/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
@@ -34,12 +34,11 @@ DeviceFileEvents
 | where DeviceName == "threat-hunt-cip" 
 | where InitiatingProcessAccountName == "florinn"
 | where FileName contains "tor"
-| where Timestamp >= datetime(2025-05-22T07:02:22.5284329Z)
+| where Timestamp >= datetime(2025-05-22T06:58:33.6551133Z)
 | order by Timestamp desc 
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, InitiatingProcessAccountName
 ```
-![1](https://github.com/user-attachments/assets/ab98094d-6f07-41b4-8b9e-fd593a897975)
-![2](https://github.com/user-attachments/assets/5ef66df5-bad5-4665-8528-2047d949bf66)
+![1](https://github.com/user-attachments/assets/c72a3059-c01e-40d0-a9f0-b3c055f14a29)
 
 ---
 
