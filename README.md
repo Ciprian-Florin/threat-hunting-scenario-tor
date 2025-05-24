@@ -72,7 +72,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, InitiatingProcessAccountName, ProcessCommandLine
 | order by Timestamp desc 
 ```
-![1](https://github.com/user-attachments/assets/78950a0a-f7b2-48b4-b776-f0a12076315a)
+![222](https://github.com/user-attachments/assets/c009ae6a-caba-43a5-ad13-557d26244d06)
 
 ---
 
