@@ -88,6 +88,7 @@ DeviceNetworkEvents
 | where InitiatingProcessAccountName == "florinn"
 | where InitiatingProcessFileName in ("tor.exe", "firefox.exe")
 | where RemotePort in ("9001", "9030","9040","9050", "9051", "9150", "80", "443")
+| project Timestamp, DeviceName, InitiatingProcessAccountName,ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName
 | order by Timestamp desc 
 ```
 ![1](https://github.com/user-attachments/assets/f165dfe9-2a0d-4f81-b980-14aad6883f19)
