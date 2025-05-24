@@ -91,8 +91,7 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName,ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName
 | order by Timestamp desc 
 ```
-![1](https://github.com/user-attachments/assets/f165dfe9-2a0d-4f81-b980-14aad6883f19)
-![2](https://github.com/user-attachments/assets/75061751-ac4c-410b-bfe8-3c89eaed1ee1)
+![222](https://github.com/user-attachments/assets/bc16baf6-efa1-41af-a4d3-9115fe92df44)
 
 ---
 
