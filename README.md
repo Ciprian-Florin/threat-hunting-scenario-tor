@@ -78,7 +78,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `May 22, 2025 10:07:37`, an employee on the "threat-hunt-cip" device successfully established a connection to the remote IP address `88.80.26.2` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\florinn\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a couple of other connections to sites over port `443`.
+Searched for any indication the TOR browser was used to establish a connection using any of the known TOR ports. At `2025-05-22T07:07:37.6796854Z`, an employee on the "threat-hunt-cip" device successfully established a connection to the remote IP address `88.80.26.2` on port `9001`. The connection was initiated by the process `tor.exe`, located in the folder `c:\users\florinn\desktop\tor browser\browser\torbrowser\tor\tor.exe`. There were a couple of other connections to sites over port `443`.
 
 **Query used to locate events:**
 
