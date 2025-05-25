@@ -34,7 +34,7 @@ DeviceFileEvents
 | where DeviceName == "threat-hunt-cip" 
 | where InitiatingProcessAccountName == "florinn"
 | where FileName contains "tor"
-| where Timestamp >= datetime(May 22, 2025 9:58:33 AM)
+| where Timestamp >= datetime(2025-05-22T06:58:33.6551133ZM)
 | order by Timestamp desc 
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, InitiatingProcessAccountName
 ```
