@@ -78,7 +78,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Searched for any indication that the TOR browser was used to establish a connection via any of the known TOR ports. On 2025-05-22T07:07:37.6796854Z, an employee using the device "threat-hunt-cip" successfully established a connection to the remote IP address 88.80.26.2 on port 9001. The connection was initiated by the process tor.exe, located at C:\Users\florinn\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe. There were also a few other connections to websites over port 443.
+Searched for any indication that the TOR browser was used to establish a connection via any of the known TOR ports. On May 22, 2025 10:07:37 AM, an employee using the device "threat-hunt-cip" successfully established a connection to the remote IP address 88.80.26.2 on port 9001. The connection was initiated by the process tor.exe, located at C:\Users\florinn\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe. There were also a few other connections to websites over port 443.
 
 **Query used to locate events:**
 
@@ -99,14 +99,14 @@ DeviceNetworkEvents
 
 ### 1. File Download - TOR Installer
 
-- **Timestamp:** `2025-05-22T06:58:33.6551133Z`
+- **Timestamp:** `May 22, 2025 9:58:33 AM`
 - **Event:** The user "florinn" downloaded a file named `tor-browser-windows-x86_64-portable-14.5.2.exe` to the Downloads folder.
 - **Action:** File download detected.
 - **File Path:** C:\Users\florinn\Downloads\tor-browser-windows-x86_64-portable-14.5.2.exe`
 
 ### 2. Process Execution - TOR Browser Installation
 
-- **Timestamp:** `2025-05-22T07:02:06.6128719Z`
+- **Timestamp:** `May 22, 2025 10:02:06 AM`
 - **Event:** The user "florinn" executed the file `tor-browser-windows-x86_64-portable-14.5.2.exe` in silent mode, initiating a background installation of the TOR Browser.
 - **Action:** Process creation detected.
 - **Command:** `tor-browser-windows-x86_64-portable-14.5.2.exe  /S`
@@ -114,14 +114,14 @@ DeviceNetworkEvents
 
 ### 3. Process Execution - TOR Browser Launch
 
-- **Timestamp:** `2025-05-22T07:03:29.3647979Z`
+- **Timestamp:** `May 22, 2025 10:03:29 AM`
 - **Event:** User "florinn" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
 - **Action:** Process creation of TOR browser-related executables detected.
 - **File Path:** `C:\Users\florinn\Downloads\tor-browser-windows-x86_64-portable-14.5.2.exe`
 
 ### 4. Network Connection - TOR Network
 
-- **Timestamp:** `2025-05-22T07:07:37.6796854Z`
+- **Timestamp:** `May 22, 2025 10:07:37 AM`
 - **Event:** A network connection to IP `88.80.26.2`on port `9001` by user "florinn" was established using `tor.exe`, confirming TOR browser network activity.
 - **Action:** Connection success.
 - **Process:** `tor.exe`
