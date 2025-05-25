@@ -25,7 +25,7 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 ### 1. Searched the `DeviceFileEvents` Table
 
-Searched for any file containing the string "tor" and discovered that the user "florinn" appears to have downloaded a TOR installer, performed actions that resulted in numerous TOR-related files being copied to the desktop, and created a file named tor-shopping-list.txt on the desktop. These events began at 2025-05-22T07:02:22.5284329Z.
+Searched for any file containing the string "tor" and discovered that the user "florinn" appears to have downloaded a TOR installer, performed actions that resulted in numerous TOR-related files being copied to the desktop, and created a file named tor-shopping-list.txt on the desktop. These events began at May 22, 2025 9:58:33 AM.
 
 **Query used to locate events:**
 
@@ -34,7 +34,7 @@ DeviceFileEvents
 | where DeviceName == "threat-hunt-cip" 
 | where InitiatingProcessAccountName == "florinn"
 | where FileName contains "tor"
-| where Timestamp >= datetime(2025-05-22T06:58:33.6551133Z)
+| where Timestamp >= datetime(May 22, 2025 9:58:33 AM)
 | order by Timestamp desc 
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, InitiatingProcessAccountName
 ```
