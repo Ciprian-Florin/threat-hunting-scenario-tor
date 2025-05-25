@@ -44,7 +44,7 @@ DeviceFileEvents
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-Searched for any ProcessCommandLine entries containing the string "tor-browser-windows-x86_64-portable-14.5.2.exe". Based on the returned logs, at 2025-05-22T07:02:06.6128719Z, an employee on the "threat-hunt-cip" device executed the file from their Downloads folder using a command that initiated a silent installation.
+Searched for any ProcessCommandLine entries containing the string "tor-browser-windows-x86_64-portable-14.5.2.exe". Based on the returned logs, at May 22, 2025 10:02:06 AM, an employee on the "threat-hunt-cip" device executed the file from their Downloads folder using a command that initiated a silent installation.
 
 **Query used to locate event:**
 
